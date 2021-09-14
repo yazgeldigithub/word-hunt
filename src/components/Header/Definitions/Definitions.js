@@ -2,7 +2,7 @@ import { ListItem } from '@material-ui/core'
 import React from 'react'
 import './Definitions.css'
 
-function Definitions({ word, meanings, category }) {
+function Definitions({ word, meanings, category, LightMode }) {
     return (
         <div className="meanings">
             {
@@ -25,7 +25,7 @@ function Definitions({ word, meanings, category }) {
                             item.definitions.map((def) => (
                                 <div
                                     className="singleMean"
-                                    style={{ backgroundColor: "white", color: "black" }}
+                                    style={{ backgroundColor:LightMode?"#3b5360" : "white", color: "black" }}
                                 >
                                     <b>{def.definition}</b>
                                     <hr style={{ backgroundColor: "black", width: "100%" }} />
