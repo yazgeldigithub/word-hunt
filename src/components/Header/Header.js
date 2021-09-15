@@ -19,7 +19,7 @@ const Header = ({ setCategory, category, word, setWord, LightMode }) => {
     }
     return (
         <div className="header">
-            <span className="title">{word ? word : "Word Hunt"}</span>
+            <span className="title">{word ? word : "Dictionary"}</span>
             <div className="inputs">
                 <ThemeProvider theme={darkTheme}>
                     <TextField
